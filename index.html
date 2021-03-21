@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Art Museum mock up site</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <nav class="navbar">
+        <div class="navbar_menu">
+          <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="van.html"> van Gogh </a></li>
+            <li><a href="map.html"> Map </a></li>
+            <li><a href="booking.html"> Booking </a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="main_img">
+        <div id="main_left">
+          <div id="main_oval">
+            <div id="introTxt"></div>
+
+            <div id="sub_text">
+              <p id="sub_p">
+                2020.3.5~5.30
+                <br />
+                ABC Art Museum
+              </p>
+            </div>
+          </div>
+          <div id="small_img">
+            <img src="img/home_sub1.png" />
+            <img src="img/home_sub2.png" />
+            <img src="img/home_sub3.png" />
+          </div>
+        </div>
+        <div id="main_right">
+          <img
+            src="img/main.png"
+            class="wow animate__animated animate__pulse"
+          />
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
