@@ -1,0 +1,28 @@
+@media only screen and (max-width: 680px) {
+  .navbar {
+    display: block;
+    position: fixed;
+    bottom: -10px;
+    padding: 20px;
+    width: -webkit-fill-available;
+  }
+  .navbar_menu {
+    width: inherit;
+    margin-top: 0px;
+    height: 40px;
+    background-color: #333;
+    display: inline-block;
+  }
+
+  .navbar_menu a {
+    padding: 0px 20px;
+    font-size: 14px;
+  }
+  .navbar_menu ul {
+    padding: 0px;
+    margin: 10px;
+  }
+  .navbar_menu li {
+    padding: 0px;
+  }
+}

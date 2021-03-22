@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700&display=swap");
 :root {
   --main-color: #ffa400;
   --background-color: #232323;
@@ -11,24 +12,31 @@ h3,
 h4,
 h5,
 p {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Sansita", sans-serif;
   letter-spacing: 1.5px;
 }
 body {
+  font-family: "Sansita", sans-serif;
   text-align: center;
   position: relative;
   padding: 0;
   margin: 0;
   background-color: #232323;
 }
+/*************** Mobile ***************/
+#text_mobile,
+#text_mobile2,
+#van_mobile,
+.btn-paint {
+  display: none;
+}
+/*******************************/
 .navbar {
   display: block;
 }
 .navbar_menu {
   text-align: center;
-
   height: 70px;
-  margin-top: 50px;
   border-radius: 50px;
   background-color: var(--navdark-color);
 }
@@ -43,7 +51,6 @@ body {
   text-transform: none;
   color: var(--text-color);
   font-size: 18px;
-  font-family: "Permanent Marker", cursive;
   letter-spacing: 1.5px;
 }
 .main_img {
@@ -71,16 +78,15 @@ body {
 
 #introTxt {
   color: var(--main-color);
-  font-family: "Permanent Marker", cursive;
-  font-size: 50px;
+  font-size: 70px;
   text-align: right;
   padding: 40px;
   height: 200px;
-  text-shadow: 0px 2px 4px #000;
+  font-style: italic;
+  text-shadow: 0px 2px 4px #fff;
 }
 #small_img {
-  padding: 30px;
-  height: 100px;
+  padding: 60px;
   display: inline-flex;
 }
 #small_img img {
@@ -94,7 +100,10 @@ body {
   float: right;
   width: auto;
   position: inherit;
-  color: white;
+  font-size: 20px;
+  color: var(--main-color);
+  font-style: italic;
+  text-shadow: 1px 1px 2px #fff;
 }
 
 /***** van Gogh *****/
@@ -114,9 +123,13 @@ body {
 }
 #van_img {
   width: auto;
+  padding: 20px;
+  height: fit-content;
 }
 
 #van_para {
+  margin: auto;
+  font-size: 14px;
   padding: 60px;
   text-align: left;
   width: 700px;
@@ -131,7 +144,7 @@ body {
   display: inline-block;
 }
 #van_imgs img {
-  height: 500px;
+  height: 300px;
 }
 
 /***** map *****/
@@ -169,7 +182,6 @@ body {
   background-size: contain;
   width: 815px;
   height: 450px;
-  font-family: "Permanent Marker", cursive;
 }
 .form-container h4 {
   padding: 10px;
