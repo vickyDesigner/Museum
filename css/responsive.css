@@ -1,37 +1,10 @@
 @media only screen and (max-width: 680px) {
-  /*
-  .navbar {
-    display: block;
-    position: fixed;
-    bottom: -10px;
-    padding: 20px;
-    width: -webkit-fill-available;
-  }
-  .navbar_menu {
-    width: inherit;
-    margin-top: 0px;
-    height: 40px;
-    background-color: #333;
-    display: inline-block;
-  }
-
-  .navbar_menu a {
-    padding: 0px 20px;
-    font-size: 14px;
-  }
-  .navbar_menu ul {
-    padding: 0px;
-    margin: 10px;
-  }
-  .navbar_menu li {
-    padding: 0px;
-  } */
-
   #introTxt,
   #small_img,
   #main_right,
   #main_oval,
-  #main_left {
+  #main_left,
+  #sub_title2 {
     display: none;
   }
 
@@ -42,10 +15,10 @@
     display: none;
   }
   #text_mobile {
-    display: inline-flex;
+    display: block;
     text-align: left;
     width: 320px;
-    padding: 40px;
+    padding: 60px;
     font-size: 50px;
     line-height: 55px;
     font-weight: bold;
@@ -67,19 +40,19 @@
     background-image: url(../img/main_mobile.JPG);
     height: 705px;
   }
-  .van_container {
+  .van_container,
+  .detail_container,
+  .map_container {
     height: auto;
   }
-  .van_sub1 {
+  .van_sub1,
+  .det_sub1 {
     display: block;
   }
   .sub1 {
     display: block;
   }
-  #van_img {
-    width: auto;
-    padding: 40px;
-  }
+
   #van_mobile {
     font-size: 25px;
     display: block;
@@ -93,7 +66,8 @@
     color: var(--navlight-color);
   }
 
-  .btn-paint {
+  .btn-paint,
+  .btn-detail {
     display: block;
     margin-bottom: 70px;
   }
@@ -108,5 +82,91 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+  }
+  /************ details *****************/
+  #text1 {
+    text-align: left;
+    display: inline-block;
+    color: white;
+    font-size: smaller;
+  }
+  #text2 {
+    display: inline-block;
+    color: white;
+    text-align: left;
+    width: 75%;
+    font-size: smaller;
+    margin-top: 0px;
+  }
+
+  .buttonGoPaint {
+    background-color: var(--main-color);
+    border-radius: 20px;
+    color: #333;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  /**************** Map ********************/
+  .map_container,
+  .book-container {
+    display: inline-block;
+  }
+  #map_img {
+    display: inline-block;
+  }
+  #map_img img {
+    width: 300px;
+    padding: 20px;
+  }
+  #map_text {
+    padding: 20px;
+    display: inline-flex;
+  }
+  #sub_title {
+    display: inline-block;
+  }
+  #map_text h4 {
+    font-size: 16px;
+    padding: 5px 8px;
+  }
+  #map_text p {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  /*********** Booking now *****************/
+  .form-container {
+    display: inline;
+  }
+  .form-container h4 {
+    display: none;
+  }
+  #form_overlay {
+    border-radius: 30px;
+    background-color: white;
+    opacity: 0.5;
+  }
+  #overlayW {
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    border-radius: 30px;
+  }
+  form {
+    display: block;
+  }
+  .form-container h5 {
+    font-size: 14px;
   }
 }

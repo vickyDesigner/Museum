@@ -176,12 +176,14 @@ body {
 /***** Booking *****/
 .form-container {
   display: inline-block;
-  background-image: url(../img/booking.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   width: 815px;
   height: 450px;
+}
+#form_container {
+  margin: 40px;
 }
 .form-container h4 {
   padding: 10px;
@@ -200,7 +202,7 @@ body {
 
 .form-container input {
   border-radius: 50px;
-  box-shadow: gold 0px 2px 2px;
+  border: 2px solid #000;
 }
 #submit {
   margin-top: 20px;
